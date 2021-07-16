@@ -26,8 +26,8 @@ In this project you will be given a set of requirements and must design a databa
 
 ### Files to Complete
 
-1. `index.js`
-2. `api/server.js`
+1. [COMPLETE] `index.js`
+2. [COMPLETE] `api/server.js` 
 3. `model.js` inside `api/project`, `api/resource` and `api/task`
 4. `router.js` inside `api/project`, `api/resource` and `api/task`
 5. migration file(s)
