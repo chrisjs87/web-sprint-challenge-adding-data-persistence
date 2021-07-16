@@ -22,27 +22,6 @@ async function getProjects() {
   return formattedCollection
 }
 
-// async function addProject(project) {
-//   db('projects').insert(project)
-//     .then( async ([project_id]) => {
-//       const row = await db('projects').where('project_id', project_id).first()
-
-//       if(row.project_completed === 0){
-//         row.project_completed = false
-//       } else if(row.project_completed === 1){
-//         row.project_completed = true
-//       }
-
-//       const result = {
-//         project_id: row.project_id,
-//         project_name: row.project_name,
-//         project_description: row.project_description,
-//         project_completed: row.project_completed
-//       }
-//       return result
-//     })
-// }
-
 function addProject(project) {
   return db('projects').insert(project)
     .then( async ([project_id]) => {
