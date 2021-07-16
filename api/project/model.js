@@ -1,7 +1,7 @@
 const db = require('../../data/dbConfig')
 
 async function getProjects() {
-  const rows = await db('projects')  // this is an array of records
+  const rows = await db('projects')
   const formattedCollection = []
   rows.forEach(record => {
     if(record.project_completed === 0){
