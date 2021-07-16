@@ -11,6 +11,11 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {})
+router.post('/', (req, res) => {
+  Task.addTask(req.body)
+    .then(task => {
+      res.json(task)
+    })
+})
 
 module.exports = router

@@ -25,7 +25,27 @@ async function getTasks() {
   return formattedCollection
 }
 
+function addTask(task) {
+  return db('tasks').insert(task)
+    .then( async ([task_id]) => {
+      const row = await db('tasks').where('task_id', task_id).first()
+
+      if(row.task_completed === 0){
+        row.task_completed = false
+      } else if(row.task_completed === 1){
+        row.task_completed = true
+      }
+
+      const result = {
+        ...row,
+        task_completed: row.task_completed
+      }
+      return result
+    })
+}
+
 
 module.exports = {
-  getTasks
+  getTasks,
+  addTask
 }
