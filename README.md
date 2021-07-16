@@ -34,12 +34,12 @@ In this project you will be given a set of requirements and must design a databa
 6. seed file(s) **optional**
 
 ### Required Dependencies
-
-The project needs some additional NPM dependencies in order to work.
-
+*************
+[COMPLETE] The project needs some additional NPM dependencies in order to work.
+*************
 ### Required Scripts
 
-Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file.
+[COMPLETE] Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file.
 
 ### Required Tables
 
