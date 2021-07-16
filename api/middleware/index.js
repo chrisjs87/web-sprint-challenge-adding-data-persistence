@@ -19,15 +19,23 @@ const checkResourceBody = async (req, res, next) => {
   }
 }
 
+// function helperFunction(body){
+//   return db('projects').where('project_id', body.project_id).first()
+// }
+
 const checkTaskBody = async (req, res, next) => {
-  const { task_description, project_id } = req.body
-  const existingProject = await db('projects').where('project_id', project_id).first()
-  if(task_description === undefined || task_description === '' || project_id === undefined || typeof project_id !== 'number') {
-    next({ status: 400, message: 'task_description or project_id invalid' })
-  } else if (!existingProject) {
-    next({ status: 400, message: 'the project you have assigned the task does not exist' })
-  } else {
-    next()
+  try {
+    const { task_description, project_id } = req.body
+    const existingProject = await db('projects').where('project_id', project_id).first()
+    // const existingProject = helperFunction(req.body)
+    if(task_description === undefined || task_description === '' || project_id === undefined || typeof project_id !== 'number' || existingProject === undefined) {
+      next({ status: 400, message: 'task_description or project_id invalid' })
+    } else {
+      next()
+    }
+  }
+  catch {
+    next({status: 500})
   }
 }
 
