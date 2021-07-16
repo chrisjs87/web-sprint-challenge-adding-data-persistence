@@ -11,6 +11,11 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {})
+router.post('/', (req, res) => {
+  Project.addProject(req.body)
+    .then(project => {
+      res.status(201).json(project)
+    })
+})
 
 module.exports = router
