@@ -10,11 +10,11 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Follow instructions to set up Codegrade's Webhook and Deploy Key.
-- [ ] Make a commit and push it to Github.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [COMPLETE] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [COMPLETE] Open the assignment in Canvas and click on the "Set up git" option.
+- [COMPLETE] Follow instructions to set up Codegrade's Webhook and Deploy Key.
+- [COMPLETE] Make a commit and push it to Github.
+- [COMPLETE] Check to see that Codegrade has accepted your git submission.
 
 For a step-by-step on setting up Codegrade see [this guide.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
 
@@ -26,20 +26,20 @@ In this project you will be given a set of requirements and must design a databa
 
 ### Files to Complete
 
-1. `index.js`
-2. `api/server.js`
+1. [COMPLETE] `index.js`
+2. [COMPLETE] `api/server.js` 
 3. `model.js` inside `api/project`, `api/resource` and `api/task`
 4. `router.js` inside `api/project`, `api/resource` and `api/task`
 5. migration file(s)
 6. seed file(s) **optional**
 
 ### Required Dependencies
-
-The project needs some additional NPM dependencies in order to work.
-
+*************
+[COMPLETE] The project needs some additional NPM dependencies in order to work.
+*************
 ### Required Scripts
 
-Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file.
+[COMPLETE] Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file.
 
 ### Required Tables
 
@@ -78,11 +78,11 @@ Build an API inside the `api` folder with endpoints for:
 - [ ] `[GET] /api/resources`
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [COMPLETE] `[POST] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
-- [ ] `[GET] /api/projects`
+- [COMPLETE] `[GET] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
@@ -106,12 +106,12 @@ Build an API inside the `api` folder with endpoints for:
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes.
-- [ ] Create a pull request to merge `<firstName-lastName>` branch into `main`.
-- [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [COMPLETE] Submit via Codegrade by committing and pushing any new changes.
+- [COMPLETE] Create a pull request to merge `<firstName-lastName>` branch into `main`.
+- [COMPLETE] Please don't merge your own pull request and make sure **you are on your own repo**.
+- [COMPLETE] Check Codegrade for automated feedback.
+- [COMPLETE] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [COMPLETE] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
